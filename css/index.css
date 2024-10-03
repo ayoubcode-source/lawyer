@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-X: hidden;
+}
+
+.navbar{
+    background-image: url(../img/white.jpg);
+    height: 80px;
+    color: #272727;
+}
+
+#nav-elements{
+    font-weight: 500;
+}
+#nav-elements a{
+    position: relative;
+    color: #272727;
+
+}
+#nav-elements a::before{
+    position: absolute;
+    content: '';
+    border-bottom: #272727;
+    width: 0%;
+    right: 0;
+    bottom: -10px;
+    height: 3px;
+    background-color: #272727;
+    transition: all .2s;
+}
+
+#nav-elements a:hover::before{
+    width: 100%;
+}
+
+
+
+
+
+.navbar a{
+    color: #272727;
+    transition: .2s;
+}
+
+.navbar a:hover{
+    text-decoration: none;
+    color: #272727;
+}
+
+
+
+.navbar-header{
+    width: 40%;
+    text-align: end;
+
+}
+
+
+.navbar ul{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bar-3{
+    width: 10%;
+}
+#bar-3{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.first-section{
+    background-image: url(../img/office.jpg);
+    background-size:cover ;
+    background-position: bottom;
+    background-color: #6d5959;
+    height: 37rem;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.first-section .container-slide{
+    position: absolute;
+    height: 100%;
+    width: 23rem;
+    right: 80px;
+    background-color: rgb(39, 39, 39,0.5);
+    z-index: 1;
+}
+
+.first-section h1 {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.first-section .title{
+    text-align: end;
+    margin: 200px 100px;
+    z-index: 2;
+    color: whitesmoke;
+}
+
+
+.about-us{
+    padding: 0px 30px;
+    position: relative;
+    width: 100%;
+}
+
+.about-us #container{
+    width: 90%;
+    height: 26rem;
+    background-color: wheat;
+    margin: 0;
+    position: absolute;
+    left: 5%;
+    top: -6rem;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: end;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+#container #img{
+    height: 100%;
+}
+
+#container img{
+    height: 100%;
+    width: 100%;
+    object-position: top;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#container p{
+    line-height: 2;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#container .signature{
+    height: 5rem;
+    width: 10rem;
+    width: 50%;
+}
