@@ -31,6 +31,7 @@ body{
 
 #nav-elements{
     font-weight: 500;
+    margin-left: 100px;
 }
 #nav-elements .textcolor{
     color: white;
@@ -89,6 +90,8 @@ body{
     font-size: 20px;
     display: flex;
     justify-content: end;
+    display: none;
+
 }
 
 
@@ -154,7 +157,8 @@ color: #272727;
 .about-us #container{
     width: 90%;
     height: 26rem;
-    background-color: wheat;
+    background-color: whitesmoke;
+    /* box-shadow: 0px 0px 5px 2px rgb(75, 45, 45); */
     margin: 0;
     position: absolute;
     left: 5%;
@@ -165,6 +169,7 @@ color: #272727;
     text-align: end;
     display: flex;
     justify-content: space-between;
+    color: black;
 
 }
 
@@ -173,12 +178,17 @@ color: #272727;
     height: 100%;
 }
 
-#container img{
+#container .prfl-pic{
     height: 100%;
-    width: 100%;
-    object-position: center;
+    width: 25rem;
+    object-position: center 10%;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.about-us .footer{
+    display: flex;
+    justify-content: space-between;
 }
 
 #container p{
@@ -211,7 +221,11 @@ color: #272727;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 60px;
+    padding: 100px 0 60px;
+}
+
+#practice-areas h1{
+    margin-bottom: 50px;
 }
 
 #practice-areas .card{
@@ -352,4 +366,29 @@ form .msg:focus{
     border: 1px solid #272727;
     box-shadow: 0px 0px 5px 1px rgba(31, 31, 31, 0.8);
     scale: 1.05;
+}
+
+@media screen and ( max-width: 600px)
+
+{
+    #bar-3{
+        display: block;
+    }
+    #nav-elements{
+        display: none;
+    }
+    .first-section h1 {
+        width: 100%;
+        margin-bottom: 20px;
+        line-height: 1.5;
+     
+    }
+    .first-section h6 {
+         display: none;
+    
+    }
+    #nav-elements{
+        font-weight: 500;
+        margin-left: 0;
+    }
 }
