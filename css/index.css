@@ -2,6 +2,7 @@
 
 html{
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 
@@ -168,28 +169,30 @@ color: #272727;
     border-radius: 10px;
     padding: 20px;
     text-align: end;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 50% 10% 40%;
     color: black;
 
 }
 
 
-#container #img{
+
+
+#container .img{
     height: 100%;
+    width: 50%;
 }
 
 #container .prfl-pic{
-    height: 100%;
-    width: 25rem;
+    height: 22rem;
+    width: 20rem;
     object-position: center 10%;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.about-us .footer{
-    display: flex;
-    justify-content: space-between;
+.about-us .footer h5{
+    margin-top: 50px;
 }
 
 #container p{
@@ -218,11 +221,15 @@ color: #272727;
 
 
 #practice-areas{
+    padding: 0 60px;
+    padding-top: 100px;
+}
+
+#practice-areas .content{
     height: 37rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 100px 0 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
 }
 
 #practice-areas h1{
@@ -329,10 +336,10 @@ color: #272727;
     justify-content: center;
 }
 
-.contact-us form{
+/* .contact-us form{
     text-align: end;
 
-}
+} */
 
 form div{
     margin-bottom: 20px;
@@ -380,7 +387,17 @@ form .msg:focus{
     }
 
     .first-section{
-        width: 100%;
+        background-size:cover ;
+        background-image: url(../img/office.jpg);
+        background-position: bottom;
+        background-color: #6d5959;
+        width: 100vw;
+        height: 37rem;
+        display: flex;
+        justify-content: end;
+        position: relative;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
     .first-section h1 {
@@ -397,4 +414,128 @@ form .msg:focus{
         font-weight: 500;
         margin-left: 0;
     }
+
+    .first-section h1 {
+        width: 100%;
+        margin-bottom: 20px;
+        line-height: 1.5;
+        font-size: 30px;
+    
+    }
+    .first-section h1 span {
+    color: rgb(206, 206, 206);
+    
+    }
+    .first-section h6 {
+    color: #272727;
+    }
+
+    .about-us #container{
+        width: 90%;
+        height: 38.5rem;
+        background-color: whitesmoke;
+        /* box-shadow: 0px 0px 5px 2px rgb(75, 45, 45); */
+        margin: 0;
+        position: absolute;
+        left: 5%;
+        top: -6rem;
+        z-index: 2;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: end;
+        display: grid;
+        grid-template-columns: 1fr;
+        color: black;
+        grid-template-areas: "first-row"
+        "second-row";
+        justify-items: center;
+    
+    }
+    #container h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #container p{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #container h5{
+        font-size: 16px;
+    }
+    
+    
+    
+    
+    #container .img{
+        height: 100%;
+        width: 50%;
+        grid-area: first-row;
+    }
+    
+    #container .prfl-pic{
+        height: 13rem;
+        width: 13rem;
+        margin-bottom: 20px;
+        object-position: center 10%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .second-section{
+        width: 100%;
+        margin-top: 100px;
+        height: 40rem;
+        background-image: url(../img/table.jpg);
+        background-position: center;
+        background-size: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    
+    }
+
+
+
+    #practice-areas{
+        padding: 0 30px;
+        padding-top: 100px;
+    }
+    
+    #practice-areas .content{
+        height: 77rem;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+    
+    #practice-areas h1{
+        margin-bottom: 50px;
+    }
+
+
+    .contact-us{
+        margin-top: 100px;
+        height: 55rem;
+        width: 100%;
+        background-color: #6e6020;
+        text-align: center;
+        padding: 100px 100px;
+    
+    }
+
+
+    .contact-us input{
+        border: 1px gray solid;
+        outline: none;
+        padding: 5px 10px;
+        width: 20rem;
+        height: 60px;
+        border-radius: 5px;
+        font-size: 13px;
+        transition: all .2s;
+        margin-bottom: 20px;
+    }
+    
 }
