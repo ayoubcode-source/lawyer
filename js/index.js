@@ -17,3 +17,8 @@
 //         }
 //     });
 // });
+
+let menubar = document.getElementById('bar-3')
+console.log(menubar)
+
+
