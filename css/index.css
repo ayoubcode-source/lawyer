@@ -537,5 +537,13 @@ form .msg:focus{
         transition: all .2s;
         margin-bottom: 20px;
     }
+
+    .contact-us h1{
+        font-size: 30px;
+    }
+    
+    .contact-us h6{
+        font-size: 13px;
+    }
     
 }
