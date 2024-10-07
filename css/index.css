@@ -125,7 +125,6 @@ body{
 }
 
 .first-section h1 {
-    width: 100%;
     margin-bottom: 20px;
     line-height: 1.5;
 
@@ -210,7 +209,7 @@ color: #272727;
 .second-section{
     width: 100%;
     height: 40rem;
-    background-image: url(../img/table.jpg);
+    background-image: url(../img/table.JPG);
     background-position: center;
     background-size: cover;
     border-top-left-radius: 20px;
@@ -400,12 +399,6 @@ form .msg:focus{
         border-bottom-right-radius: 20px;
     }
 
-    .first-section h1 {
-        width: 100%;
-        margin-bottom: 20px;
-        line-height: 1.5;
-     
-    }
     .first-section h6 {
          display: none;
     
@@ -419,7 +412,7 @@ form .msg:focus{
         width: 100%;
         margin-bottom: 20px;
         line-height: 1.5;
-        font-size: 30px;
+        font-size: 23px;
     
     }
     .first-section h1 span {
@@ -487,7 +480,7 @@ form .msg:focus{
         width: 100%;
         margin-top: 100px;
         height: 40rem;
-        background-image: url(../img/table.jpg);
+        background-image: url(../img/table.JPG);
         background-position: center;
         background-size: cover;
         border-top-left-radius: 20px;
@@ -546,4 +539,12 @@ form .msg:focus{
         font-size: 13px;
     }
     
+
+    .first-section .title{
+        text-align: end;
+        margin: 200px 100px;
+        z-index: 2;
+        color: whitesmoke;
+        width: 10rem;
+    }
 }
